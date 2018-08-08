@@ -1,0 +1,102 @@
+.headerTitle{
+    text-align: center;
+    height: 51px;
+    border: 1px solid #000;
+    width: 100%;
+}
+agm-map {
+    height: 100%;
+}
+.map{
+    height: 500px;
+    overflow: auto;
+    border: 1px solid #000;
+    position: relative;
+}
+.weatherFilter{
+    float: left;
+    width: 100%;
+    border: 1px solid #000;
+    height: 40px;
+}
+.filterTitle{
+    float: left;
+}
+ng-multiselect-dropdown{
+    width: 150px;
+    float: left;
+    max-height: 40px;
+}
+.legend-container{
+    z-index:1;
+    bottom:0;
+    left:0;
+    position: absolute;
+    background-color: #fff;
+    font-size: 10px;
+    box-shadow: 0 1px 2px 1px rgba(0,0,0,.5);
+    border-radius: 4px;
+    line-height: 3em;
+    margin: 5px;
+    width: 32em;
+}
+.legend-title{
+    float: left;
+    padding-left: 5px;
+    width: 20%;
+}
+.legend-body{
+    float: left;
+    width: 79%;
+    position: absolute;
+    left: 20%;
+}
+.legend-scale{
+    width: 100%;
+    position: absolute;
+    height: 0.7em;
+    top: 1.6em;
+    border: 1px solid #a2a2a2;
+}
+.weather-percepitation{
+    background-image: linear-gradient(to right, rgba(172, 170, 247, 0) 0%, rgba(172, 170, 247, 0.4) 0.5%, rgba(141, 138, 243, 0.9) 5%, rgb(112, 110, 194) 10%, rgb(86, 88, 255) 20%, rgb(91, 93, 177) 50%, rgb(62, 63, 133) 100%); 
+}
+.weather-wind{
+    background-image: linear-gradient(to right, rgba(255, 255, 0, 0) 0%, rgba(170, 128, 177, 0.44) 1%, rgba(170, 128, 177, 0.54) 1.5%, rgba(176, 128, 177, 0.71) 3%, rgba(170, 128, 177, 0.84) 6%, rgb(164, 123, 170) 12.5%, rgba(116, 76, 172, 0.9) 25%, rgb(158, 128, 177) 50%, rgba(48, 6, 53, 0.82) 100%);
+}
+.weather-cloud{
+    background-image: linear-gradient(to right, rgba(247, 247, 255, 0) 0%, rgba(251, 247, 255, 0) 10%, rgba(244, 248, 255, 0.1) 20%, rgba(240, 249, 255, 0.2) 30%, rgba(221, 250, 255, 0.4) 40%, rgba(224, 224, 224, 0.9) 50%, rgba(224, 224, 224, 0.76) 60%, rgba(228, 228, 228, 0.9) 70%, rgba(232, 232, 232, 0.9) 80%, rgb(214, 213, 213) 90%, rgb(210, 210, 210) 95%, rgb(183, 183, 183) 100%);
+}
+.weather-temperature{
+    background-image: linear-gradient(to right, rgb(159, 85, 181) 0%, rgb(44, 106, 187) 8.75%, rgb(82, 139, 213) 12.5%, rgb(103, 163, 222) 18.75%, rgb(142, 202, 240) 25%, rgb(155, 213, 244) 31.25%, rgb(172, 225, 253) 37.5%, rgb(194, 234, 255) 43.75%, rgb(255, 255, 208) 50%, rgb(254, 248, 174) 56.25%, rgb(254, 232, 146) 62.5%, rgb(254, 226, 112) 68.75%, rgb(253, 212, 97) 75%, rgb(244, 168, 94) 82.5%, rgb(244, 129, 89) 87.5%, rgb(244, 104, 89) 93.75%, rgb(244, 76, 73) 100%);
+}
+.weather-pressure{
+    background-image: linear-gradient(to right, rgb(0, 115, 255) 0%, rgb(0, 170, 255) 8.35059%, rgb(75, 208, 214) 24.9192%, rgb(141, 231, 199) 41.4879%, rgb(176, 247, 32) 49.7722%, rgb(240, 184, 0) 58.0565%, rgb(251, 85, 21) 74.6251%, rgb(243, 54, 59) 91.1938%, rgb(198, 0, 0) 100%);
+}
+.legend-min-scale{
+    position: absolute;
+    border-left: 1px solid #a2a2a2;
+    left: 0;
+    height: 2em;
+    line-height: 1em;
+    padding-left: 2px;
+    margin-top: 1%;
+}
+.legend-avg-scale{  
+    position: absolute;
+    border-left: 1px solid #a2a2a2;
+    left: 50%;
+    height: 2em;
+    line-height: 1em;
+    padding-left: 2px;
+    margin-top: 1%;
+}
+.legend-max-scale{
+    position: absolute;
+    border-right: 1px solid #a2a2a2;
+    right: 0%;
+    height: 2em;
+    line-height: 1em;
+    padding-right: 2px;
+    margin-top: 1%;
+}

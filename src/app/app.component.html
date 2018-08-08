@@ -1,0 +1,40 @@
+<!--Heading begins-->
+<div style="text-align:center">
+  <h3>
+    {{ title }}
+  </h3>
+</div>
+<!--Headin Ends-->
+<!--Layer Filter Begins-->
+<div class="weatherFilter">
+  <span class="filterTitle">
+    Weather layers :
+  </span>
+  <ng-multiselect-dropdown
+    [placeholder]="'Weather Layers'"
+    [data]="mapWeatherLayers"
+    [(ngModel)]="selectedWeatherLayer"
+    [settings]="dropdownSettings.singleSelect"
+    (onSelect)="addWeatherLayer()"
+    (onDeSelect)="removeWeatherLayer()"
+  >
+  </ng-multiselect-dropdown>
+</div>
+<!--Layer Filter Ends-->
+<!--Map Begins-->
+<div class="map">
+  <!--Weather Layer Legend Starts-->
+  <div class="legend-container" *ngIf="selectedWeatherLayer.length>0">
+    <div class="legend-title">{{weatherOption.legendTitle}}</div>
+    <div class="legend-body">
+      <div class="legend-min-scale">{{weatherOption.legendMin}}</div>
+      <div class="legend-avg-scale">{{weatherOption.legendAvg}}</div>
+      <div class="legend-max-scale">{{weatherOption.legendMax}}</div>
+      <div [ngClass]="['legend-scale',weatherOption.scaleClass]"></div>
+    </div>
+  </div>
+  <agm-map (mapReady)="doSomethingWithTheMapInstance($event)" [latitude]="initMap['lat']" [longitude]="initMap['lng']" [fullscreenControl]='true' [zoomControl]='true'
+    [zoom]="initMap['zoom']" [disableDefaultUI]='false' [zoomControl]='false' [mapTypeControl]='true'>
+  </agm-map>
+</div>
+<!--Map Ends-->
